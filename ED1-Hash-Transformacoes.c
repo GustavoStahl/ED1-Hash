@@ -47,6 +47,7 @@ void mudaBase(int numero, int base, char numeroString[]){
 numeros raiz(numeros lista, int base){
     int i, numero_aux;
     char numeroString[MAX];
+    numeroString[0] = '\0';
     numeros lista_raiz = (numeros)malloc(sizeof(struct vetor));
 
     for(i=0; i<N; i++){
@@ -110,7 +111,7 @@ int main(){
     printf("\n");
     ///////////////////////////////
 
-    printf("\nElementos com base %d:\n", M);
+    printf("\nElementos com base %d:\n", base);
     lista_raiz = raiz(lista_prov, base);
 
     /////MOSTRA LISTA RAIZ/////
